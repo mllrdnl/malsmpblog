@@ -1,0 +1,15 @@
+.navBody {
+  background-color: #1c2121;
+  color: #869898;
+  padding: 0.8rem;
+}
+
+.navLink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navLink h4 {
+  margin-left: 10px;
+}
