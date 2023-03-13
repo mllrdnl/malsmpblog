@@ -1,0 +1,15 @@
+.hzline {
+  border: 1px solid #36453b;
+}
+
+.imgContainer {
+  height: 200px;
+  width: 200px;
+  position: relative;
+}
+
+.coverImg {
+  height: 200px;
+  width: 200px;
+  object-fit: contain;
+}
