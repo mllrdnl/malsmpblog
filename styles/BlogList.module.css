@@ -2,14 +2,55 @@
   border: 1px solid #36453b;
 }
 
+.blogListContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .imgContainer {
-  height: 200px;
-  width: 200px;
+  height: 400px;
+  width: 400px;
   position: relative;
 }
 
+.postContainer {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 400px;
+  position: relative;
+  margin: 2rem;
+}
+
+.postContainer:hover {
+  scale: 1.1;
+  cursor: pointer;
+}
+
 .coverImg {
-  height: 200px;
-  width: 200px;
-  object-fit: contain;
+  object-fit: cover;
+}
+
+.postInfo {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+.desc p {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.readPost {
+  margin: 10px;
+}
+
+.readPost:hover {
+  text-decoration: underline;
 }

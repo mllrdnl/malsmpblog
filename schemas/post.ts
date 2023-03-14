@@ -11,6 +11,12 @@ export default defineType({
       type: 'string',
     }),
     defineField({
+      name: 'description',
+      description: 'Enter a short snippet for the blog...',
+      title: 'Description',
+      type: 'string',
+    }),
+    defineField({
       name: 'slug',
       title: 'Slug',
       type: 'slug',
@@ -56,6 +62,7 @@ export default defineType({
       title: 'title',
       author: 'author.name',
       media: 'mainImage',
+      description: 'description',
     },
     prepare(selection) {
       const {author} = selection

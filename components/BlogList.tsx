@@ -1,6 +1,8 @@
 import urlFor from '../lib/urlFor'
 import Image from 'next/image'
 import styles from '../styles/BlogList.module.css'
+import {BsArrowUpRight} from 'react-icons/bs'
+import ClientSideRoute from './ClientSideRoute'
 
 type Props = {
   posts: Post[]
@@ -11,19 +13,37 @@ function BlogList({posts}: Props) {
   return (
     <div>
       <hr className={styles.hzline} />
-      <div>
+      <div className={styles.blogListContainer}>
         {/* Posts */}
         {posts.map((post) => (
-          <div key={post._id}>
-            <div className={styles.imgContainer}>
-              <Image
-                className={styles.coverImg}
-                src={urlFor(post.mainImage).url()}
-                alt={post.title}
-                fill
-              />
+          <ClientSideRoute route={`/post/${post.slug.current}`} key={post._id}>
+            <div className={styles.postContainer}>
+              <div className={styles.imgContainer}>
+                <Image
+                  className={styles.coverImg}
+                  src={urlFor(post.mainImage).url()}
+                  alt={post.title}
+                  fill
+                />
+              </div>
+              <div className={styles.postInfo}>
+                <p>{post.title}</p>
+                {new Date(post._createdAt).toLocaleDateString('en-US', {
+                  day: 'numeric',
+                  month: 'long',
+                  year: 'numeric',
+                })}
+                <div className={styles.desc}>
+                  <p>{post.description}</p>
+                </div>
+                <div className={styles.readPost}>
+                  <p>
+                    Read Post <BsArrowUpRight />
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
+          </ClientSideRoute>
         ))}
       </div>
     </div>
