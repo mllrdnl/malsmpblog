@@ -1,0 +1,54 @@
+.postImg {
+  object-fit: cover;
+}
+
+.postHeader {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 80%;
+  position: relative;
+  margin: 2rem;
+}
+
+.postHeaderImg {
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  top: 0;
+  opacity: 0.2;
+  backdrop-filter: blur(10px);
+}
+
+.postBody {
+  padding: 10px;
+}
+
+.section {
+  color: white;
+  border: 1px solid #99cccc;
+}
+
+.infoSection {
+  padding: 5px;
+  background-color: #99cccc;
+  display: flex;
+  flex-direction: column;
+}
+
+.logoImg {
+  border: none;
+  border-radius: 50%;
+}
+
+.authorInfo {
+  display: flex;
+  align-items: center;
+}
+
+.desc {
+  font-size: 18px;
+  font-style: italic;
+}
+
+/* need to style category */

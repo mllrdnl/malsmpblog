@@ -1,0 +1,59 @@
+.imgContainer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 10px;
+}
+
+.image {
+  object-fit: contain;
+}
+
+.h1s {
+  padding: 10px;
+  font-weight: bold;
+}
+
+.h2s {
+  padding: 10px;
+  font-weight: bold;
+}
+
+.h3s {
+  padding: 10px;
+  font-weight: bold;
+}
+
+.h4s {
+  padding: 10px;
+  font-weight: bold;
+}
+
+.blockquotes {
+  border-left: 2px solid #55988b;
+  padding: 5px;
+  margin: 5px;
+}
+
+.uls {
+  margin-left: 10px;
+  list-style-type: disc;
+}
+
+.numbered {
+  margin-left: 10px;
+  list-style-type: decimal;
+}
+
+.checkmarks {
+  margin-left: 10px;
+}
+
+.links {
+  text-decoration: underline;
+  color: #55988b;
+}
+
+.links:hover {
+  color: black;
+}
