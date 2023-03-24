@@ -1,5 +1,19 @@
+@import url('https://use.typekit.net/yuz6aae.css');
+
 .bannerContainer {
   display: flex;
   flex-direction: column;
   margin: 1rem 2rem;
+}
+
+.banner h1 {
+  font-family: 'chantal', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.banner h2 {
+  font-family: 'chantal', sans-serif;
+  font-weight: 500;
+  font-style: italic;
 }
