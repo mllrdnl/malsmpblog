@@ -9,7 +9,7 @@ function Header() {
         <Link href="/">
           <Image
             className={styles.logoImg}
-            src="/neonrose.jpeg"
+            src="/nodrinkinggold.png"
             height={50}
             width={50}
             alt="logo"
@@ -17,7 +17,9 @@ function Header() {
         </Link>
       </div>
       <div>
-        <Link href="/">Sign Up for Updates!</Link>
+        <Link className={styles.signUp} href="/">
+          Sign Up for Updates!
+        </Link>
       </div>
     </header>
   )

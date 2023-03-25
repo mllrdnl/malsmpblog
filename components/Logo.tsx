@@ -7,7 +7,7 @@ function Logo(props: any) {
 
   return (
     <div className={styles.logoContainer}>
-      <Image className={styles.image} height={50} width={50} src="/neonrose.jpeg" alt="logo" />
+      <Image className={styles.image} height={50} width={50} src="/nodrinkinggold.png" alt="logo" />
 
       {renderDefault && <>{renderDefault(props)}</>}
     </div>

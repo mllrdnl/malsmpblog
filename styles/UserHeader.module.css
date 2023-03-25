@@ -3,9 +3,14 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 1rem 2rem;
+  background-color: #4c4b16;
 }
 
 .logoImg {
   border: none;
   border-radius: 50%;
+}
+
+.signUp {
+  color: #e7b10a;
 }
