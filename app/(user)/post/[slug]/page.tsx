@@ -56,8 +56,8 @@ async function Post({params: {slug}}: Props) {
             <section className={styles.infoSection}>
               <div>
                 <div>
-                  <h1>{post.title}</h1>
-                  <p>
+                  <h1 className={styles.postTitle}>{post.title.toUpperCase()}</h1>
+                  <p className={styles.date}>
                     {new Date(post._createdAt).toLocaleDateString('en-US', {
                       day: 'numeric',
                       month: 'long',
@@ -65,20 +65,10 @@ async function Post({params: {slug}}: Props) {
                     })}
                   </p>
                 </div>
-                <div className={styles.authorInfo}>
-                  <Image
-                    className={styles.logoImg}
-                    src="/neonrose.jpeg"
-                    height={50}
-                    width={50}
-                    alt="logo"
-                  />
-                  <div>Author Name</div>
-                </div>
               </div>
               <div className={styles.postDesc}>
                 <h2 className={styles.desc}>{post.description}</h2>
-                <div>
+                <div className={styles.category}>
                   {post.categories.map((category) => (
                     <p key={category._id}>{category.title}</p>
                   ))}
@@ -86,9 +76,10 @@ async function Post({params: {slug}}: Props) {
               </div>
             </section>
           </div>
+          <div className={styles.postContent}>
+            <PortableText value={post.body} components={RichTextComponents} />
+          </div>
         </section>
-
-        <PortableText value={post.body} components={RichTextComponents} />
       </article>
     </div>
   )

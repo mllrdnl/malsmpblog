@@ -1,54 +1,70 @@
 .postImg {
-  object-fit: cover;
+  object-fit: contain;
+}
+
+.postBody {
+  padding: 1rem;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  border-radius: 5px;
 }
 
 .postHeader {
   display: flex;
-  flex-direction: column;
-  height: 400px;
-  width: 80%;
+  flex-direction: row;
+  height: auto;
   position: relative;
   margin: 2rem;
 }
 
-.postHeaderImg {
-  height: 400px;
-  width: 400px;
-  position: absolute;
-  top: 0;
-  opacity: 0.2;
-  backdrop-filter: blur(10px);
+.postTitle {
+  font-family: 'Miltonian Tattoo', cursive;
+  font-size: 1.9rem;
 }
 
-.postBody {
-  padding: 10px;
+.date {
+  font-size: 1.2rem;
+  color: #90a4ae;
+}
+
+.category {
+  color: #90a4ae;
+}
+
+.postHeaderImg {
+  height: 200px;
+  width: 200px;
+  /* position: absolute;
+  top: 0; */
+  opacity: 0.7;
+  backdrop-filter: blur(10px);
 }
 
 .section {
   color: white;
-  border: 1px solid #99cccc;
+
+  background-image: linear-gradient(to right top, #37474f, #41545d, #4b616c, #556f7b, #607d8b);
+  /* width: 80%; */
+  border-radius: 5px;
 }
 
 .infoSection {
   padding: 5px;
-  background-color: #99cccc;
+  /* background-color: #90a4ae; */
   display: flex;
   flex-direction: column;
-}
-
-.logoImg {
-  border: none;
-  border-radius: 50%;
-}
-
-.authorInfo {
-  display: flex;
-  align-items: center;
 }
 
 .desc {
   font-size: 18px;
   font-style: italic;
+}
+
+.postContent {
+  padding: 0rem 4rem 2rem 4rem;
+  font-size: 1.1rem;
 }
 
 /* need to style category */

@@ -27,7 +27,8 @@ function BlogList({posts}: Props) {
                 />
               </div>
               <div className={styles.postInfo}>
-                <p>{post.title}</p>
+                <h4 className={styles.postTitle}>{post.title.toUpperCase()}</h4>
+                {/* <p>{post.title}</p> */}
                 {new Date(post._createdAt).toLocaleDateString('en-US', {
                   day: 'numeric',
                   month: 'long',

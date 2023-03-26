@@ -1,11 +1,14 @@
 .hzline {
   border: 1px solid #36453b;
+  margin: 0rem 1rem;
 }
 
 .blogListContainer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
 }
 
 .imgContainer {
@@ -29,15 +32,31 @@
 }
 
 .coverImg {
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .postInfo {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: rgb(255, 255, 255, 0.8);
+  background-color: rgb(255, 255, 255, 0.5);
   backdrop-filter: blur(10px);
+  padding: 0.6rem;
+  border-radius: 5px;
+}
+
+.postInfo {
+  color: #607d8b;
+}
+
+.postTitle {
+  font-family: 'Miltonian Tattoo', cursive;
+  font-size: 1.3rem;
+  color: black;
+}
+
+.desc {
+  color: black;
 }
 
 .desc p {
@@ -48,7 +67,8 @@
 }
 
 .readPost {
-  margin: 10px;
+  margin: 0.5rem;
+  color: black;
 }
 
 .readPost:hover {

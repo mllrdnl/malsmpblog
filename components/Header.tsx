@@ -6,17 +6,18 @@ function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.left}>
-        <Link href="/">
+        <Link href="/" className={styles.headerLink}>
           <Image
             className={styles.logoImg}
             src="/nodrinkinggold.png"
-            height={50}
-            width={50}
+            height={60}
+            width={60}
             alt="logo"
           />
+          <h1 className={styles.headerHeader}>MMPB</h1>
         </Link>
       </div>
-      <div>
+      <div className={styles.signUpDiv}>
         <Link className={styles.signUp} href="/">
           Sign Up for Updates!
         </Link>
