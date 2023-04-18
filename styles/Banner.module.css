@@ -3,7 +3,7 @@
 .bannerContainer {
   display: flex;
   flex-direction: column;
-  margin: 1rem 2rem;
+  margin: 1rem 3rem;
 }
 
 .banner h1 {
